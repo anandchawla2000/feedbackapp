@@ -1,13 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #00002a;
+}
+.containerfluid {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 90vw;
+  margin: auto;
+}
+.tac {
+  text-align: center;
+}
+.containerfluid .header {
+  background-color: #00001c;
+  color: whitesmoke;
+}
+.box {
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  padding: 10px 20px 15px 15px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.box .inputcontainer {
+  margin-top: 10px;
+}
+.box .inputcontainer .inputbox {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+.box .inputcontainer .inputbox input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  padding-left: 7px;
+}
+.box .inputcontainer .inputbox button {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  top: 50%;
+  transform: translatey(-50%);
+  padding: 4px 2px 3px 2px;
+}
+/* Radio button */
+.radiobuttonlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.radiobuttonlist .radiobtn {
+  height: 40px;
+  width: 40px;
+}
+.radiobuttonlist .radiobtn .radioinputgroup {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.radiobuttonlist .radiobtn .radioinputgroup input {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+}
+.radiobuttonlist .radiobtn .radioinputgroup label {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.radioinputgroup input[type="radio"]:checked + label {
+  background-color: aqua;
+}
+/* Card */
+.card {
+  margin: auto;
+  width: 450px;
+  border-radius: 15px;
+  background-color: white;
+  height: max-content;
+  margin-top: 10px;
+}
+.card .feedback p {
+  padding: 25px 2px 25px 45px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputcontainer .inputbox button:enabled {
+  color: white;
+  background-color: #333333;
+}
+
+.card .feedback {
+  position: relative;
+}
+
+.card .feedback .value {
+  position: absolute;
+  top: -6%;
+  left: -2%;
+  height: 30px;
+  width: 30px;
+  background-color: lightcoral;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card .feedback .icon {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nofeedback{
+  color: white;
+  margin-top: 10px;
 }
