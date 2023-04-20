@@ -46,6 +46,9 @@ export const UpperPart = ({updatefunc}) => {
             </button>
           </div>
         </div>
+        <div className="tac textmsg">
+            <p>Feedabck Must be more than 6 Words</p>
+          </div>
       </div>
     </>
   );

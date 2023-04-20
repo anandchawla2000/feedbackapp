@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
 * {
   margin: 0px;
   padding: 0px;
@@ -22,13 +25,26 @@ body {
   background-color: #00001c;
   color: whitesmoke;
 }
+.header h1 {
+  color: #ff4d4d;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-family: "Roboto", sans-serif;
+}
 .box {
   margin: auto;
   width: max-content;
   height: max-content;
-  padding: 10px 20px 15px 15px;
+  padding: 15px 20px 20px 15px;
   background-color: whitesmoke;
   border-radius: 15px;
+  margin-top: 20px;
+}
+.box .boxhead h2 {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 5px;
+  font-size: 25px;
 }
 .box .inputcontainer {
   margin-top: 10px;
@@ -44,6 +60,7 @@ body {
   border: 1px solid #bebebe;
   border-radius: 10px;
   padding-left: 7px;
+  font-size: 18px;
 }
 .box .inputcontainer .inputbox button {
   position: absolute;
@@ -51,7 +68,18 @@ body {
   right: 4%;
   top: 50%;
   transform: translatey(-50%);
-  padding: 4px 2px 3px 2px;
+  padding: 5px 5px 4px 5px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.box .textmsg {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #ff3333;
+  margin-top: 8px;
 }
 /* Radio button */
 .radiobuttonlist {
@@ -59,6 +87,7 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+  padding: 5px 0px;
 }
 .radiobuttonlist .radiobtn {
   height: 40px;
@@ -86,14 +115,16 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: purple;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: 1px solid black;
 }
 .radioinputgroup input[type="radio"]:checked + label {
-  background-color: aqua;
+  /* background-color: aqua; */
+  background-color: #ff6666;
 }
 /* Card */
 .card {
@@ -123,7 +154,7 @@ body {
   left: -2%;
   height: 30px;
   width: 30px;
-  background-color: lightcoral;
+  background-color: #ff8080;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -144,7 +175,18 @@ body {
   flex-wrap: wrap;
 }
 
-.nofeedback{
+.nofeedback {
   color: white;
   margin-top: 10px;
+}
+
+.card .feedback .value h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card .feedback p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.7px;
 }

@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="containerfluid">
         <div className="header tac">
-          <h2>FEEDBACK UI</h2>
+          <h1>Feedback UI</h1>
         </div>
         <div className="container">
           <UpperPart updatefunc={dataupdate} />
